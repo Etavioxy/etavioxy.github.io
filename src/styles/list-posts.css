@@ -1,0 +1,100 @@
+/* ListPosts 条目结构 —— antfu.me/posts 的列表原子，两个页面共用：
+   Bookmarks（学习页，条目由 utils/markdown.ts 从 .md 生成）与 Blog（长文列表）。
+   标题左 + meta（日期/类型）紧跟标题文本流 + tags/摘要的小字行。 */
+.lp-item {
+  display: block;
+}
+
+.lp-item:hover {
+  background: #88888811;
+}
+
+.lp-li {
+  display: block;
+}
+
+/* 标题行：18px，与 meta 同一行内联流动（标题折行时 meta 跟到末行） */
+.lp-row {
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.2em;
+}
+
+.lp-title {
+  vertical-align: middle;
+}
+
+.lp-meta {
+  display: inline;
+  margin-left: 0.75rem;
+  white-space: nowrap;
+}
+
+/* 日期：antfu op50 小字，与标题同基线 */
+.lp-date {
+  font-size: 0.875rem;
+  line-height: inherit;
+  opacity: 0.5;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.lp-tag {
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1.2;
+  color: #888;
+  border: 1px solid #8884;
+  border-radius: 4px;
+  padding: 1px 5px;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+/* tags + 摘要行：紧贴标题行（antfu mt--2），小字灰 */
+.lp-extra {
+  margin-top: -0.5rem;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #888;
+}
+
+.lp-desc {
+  opacity: 0.7;
+}
+
+/* 列表容器：紧凑节奏（antfu 的 ul/li 缩进）
+   放在 .prose 里时压过 prose 的圆点前缀（.prose ul > li::before 与 padding-left） */
+.lp-list {
+  margin-top: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.prose .lp-list > li {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.prose .lp-list > li::before {
+  display: none;
+}
+
+/* 学习页 markdown 列表：antfu 紧凑节奏 */
+.bookmarks-prose ul {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+.bookmarks-prose li {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* 项目页：比 prose 宽，三列网格与分组描边标题都需要横向余量 */
+.page-wide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
