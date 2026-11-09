@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Rust",
+    "bytes": 989852,
+    "percent": 28.5
+  },
+  {
+    "name": "JavaScript",
+    "bytes": 951454,
+    "percent": 27.3
+  },
+  {
+    "name": "TypeScript",
+    "bytes": 682712,
+    "percent": 19.6
+  },
+  {
+    "name": "C",
+    "bytes": 326541,
+    "percent": 9.4
+  },
+  {
+    "name": "Vue",
+    "bytes": 131924,
+    "percent": 3.8
+  },
+  {
+    "name": "C++",
+    "bytes": 125608,
+    "percent": 3.6
+  },
+  {
+    "name": "Python",
+    "bytes": 54815,
+    "percent": 1.6
+  },
+  {
+    "name": "CSS",
+    "bytes": 42942,
+    "percent": 1.2
+  },
+  {
+    "name": "HTML",
+    "bytes": 26136,
+    "percent": 0.8
+  },
+  {
+    "name": "AutoHotkey",
+    "bytes": 26087,
+    "percent": 0.7
+  },
+  {
+    "name": "C#",
+    "bytes": 20804,
+    "percent": 0.6
+  },
+  {
+    "name": "Go",
+    "bytes": 19454,
+    "percent": 0.6
+  },
+  {
+    "name": "Lua",
+    "bytes": 17766,
+    "percent": 0.5
+  },
+  {
+    "name": "GLSL",
+    "bytes": 17252,
+    "percent": 0.5
+  },
+  {
+    "name": "PowerShell",
+    "bytes": 10757,
+    "percent": 0.3
+  },
+  {
+    "name": "SCSS",
+    "bytes": 8335,
+    "percent": 0.2
+  },
+  {
+    "name": "Dockerfile",
+    "bytes": 4478,
+    "percent": 0.1
+  },
+  {
+    "name": "Shell",
+    "bytes": 3922,
+    "percent": 0.1
+  },
+  {
+    "name": "WGSL",
+    "bytes": 3612,
+    "percent": 0.1
+  },
+  {
+    "name": "Hurl",
+    "bytes": 3481,
+    "percent": 0.1
+  },
+  {
+    "name": "Makefile",
+    "bytes": 3310,
+    "percent": 0.1
+  },
+  {
+    "name": "HLSL",
+    "bytes": 2789,
+    "percent": 0.1
+  },
+  {
+    "name": "Assembly",
+    "bytes": 2557,
+    "percent": 0.1
+  },
+  {
+    "name": "CMake",
+    "bytes": 1493,
+    "percent": 0
+  },
+  {
+    "name": "Batchfile",
+    "bytes": 788,
+    "percent": 0
+  }
+]
