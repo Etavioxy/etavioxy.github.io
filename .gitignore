@@ -4,3 +4,8 @@ dist/
 typed-router.d.ts
 .DS_Store
 *.local
+
+# Local-only agent instructions and memory.
+AGENTS.md
+AGENTS.local.md
+agents.local.md
