@@ -12,7 +12,7 @@ export interface Project {
 }
 
 /**
- * Site content — projects gallery (T-06).
+ * Site content — project gallery.
  * desc 直接引用各 GitHub 仓库 description 原文，不翻译不发明。
  * 分组（用户定序，英文 ≤15 字符）：Workflow / Agent / Libraries /
  * Graphics / Game / Developing Tools / UI Components / Utilities / Plugins / ACM。
