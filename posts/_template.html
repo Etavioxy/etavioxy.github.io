@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="author" content="Etavioxy">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Etavioxy — projects, tools and experiments built with AI agents">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>_template</title>
+    <script>
+      ;(function () {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('dark', true)
+      })()
+    </script>
+    <script type="module" crossorigin="" src="/assets/app-w_QZteIy.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/useApi-CROJJdhE-B72jAbld.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/preload-helper-Czpn1I53.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/_plugin-vue_export-helper-BDNMzG2s.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/dayjs.min-CFj7QBVr.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/logics-CQ6rnhUJ.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/HeadingOutline-CaJXkKME.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/agent-CXoCeH78.js">
+    <link rel="stylesheet" crossorigin="" href="/assets/HeadingOutline-BoAbi82q.css">
+    <link rel="stylesheet" crossorigin="" href="/assets/app-9rDy9GVy.css">
+  <link rel="modulepreload" crossorigin="" href="/assets/_template-ButyUKzx.js"><link rel="modulepreload" crossorigin="" href="/assets/WrapperPost-DXqYwlQd.js"><meta property="og:title" content="_template"><meta name="twitter:title" content="_template"></head>
+  <body class="font-sans text-gray-700 dark:text-gray-200 relative">
+    <div id="app" data-server-rendered="true"><!--[--><header class="header z-40" data-v-3ef44d0f=""><a href="/" class="w-12 h-12 absolute xl:fixed m-5 select-none outline-none" title="Etavioxy" focusable="false" data-v-3ef44d0f=""><img src="/favicon.svg" alt="Etavioxy" class="w-12 h-12 rounded-full" data-v-3ef44d0f=""></a><button title="Scroll to top" fixed="" right-3="" bottom-3="" w-10="" h-10="" hover:op100="" rounded-full="" hover-bg-hex-8883="" transition="" duration-300="" z-100="" print:hidden="" class="op0! pointer-events-none" data-v-3ef44d0f=""><div i-ri-arrow-up-line="" data-v-3ef44d0f=""></div></button><nav class="nav" data-v-3ef44d0f=""><div class="spacer" data-v-3ef44d0f=""></div><div class="right" print:op0="" data-v-3ef44d0f=""><a href="/posts" class="router-link-active" title="Blog" data-v-3ef44d0f=""><span class="lt-md:hidden" data-v-3ef44d0f="">Blog</span><div i-ri-quill-pen-line="" class="md:hidden" data-v-3ef44d0f=""></div></a><a href="/projects" class="" title="Projects" data-v-3ef44d0f=""><span class="lt-md:hidden" data-v-3ef44d0f="">Projects</span><div i-ri-lightbulb-line="" class="md:hidden" data-v-3ef44d0f=""></div></a><a href="/bookmarks" class="lt-md:hidden" title="Bookmarks" data-v-3ef44d0f=""> Bookmarks </a><a href="https://github.com/Etavioxy" target="_blank" title="GitHub" data-v-3ef44d0f=""><div i-uil-github-alt="" data-v-3ef44d0f=""></div></a><a class="select-none" title="Toggle Color Scheme" data-v-3ef44d0f=""><div i-ri-sun-line="" dark:i-ri-moon-line=""></div></a></div></nav></header><main class="px-7 py-10 of-x-hidden"><!--[--><div class="prose m-auto mb-8"><!----><h1 class="mb-0 slide-enter-50">_template</h1><p class="opacity-50 !-mt-6 slide-enter-50"><!--[-->Oct 21<span> · 3min</span><!--]--><!--[--><!--[--> · <a href="https://github.com/Etavioxy/friction-skills" target="_blank" rel="noopener" class="hover:op100"><span class="mr-1 inline-block align-middle text-sm" i-uil-github-alt="" aria-hidden="true"></span>Etavioxy/friction-skills</a><!--]--><!--]--></p><!----></div><article class=""><!--[--><div class="prose m-auto slide-enter-content"><div class="table-of-contents"><div class="table-of-contents-anchor"><div class="i-ri-menu-2-fill"></div></div><ul><li><a href="#约定">约定</a></li><li><a href="#渲染基线">渲染基线</a><ul><li><a href="#三级标题">三级标题</a></li></ul></li></ul></div><div class="custom-block warning"><p>This is a draft post, the content may be incomplete. Please check back later.</p></div><h2 id="约定" tabindex="-1">约定 <a class="header-anchor" href="#约定" aria-hidden="true">#</a></h2><ul><li>文件名即 URL：<code>content/posts/&lt;slug&gt;.md</code> → <code>/posts/&lt;slug&gt;</code></li><li>frontmatter 必填 <code>title</code>、<code>date</code>；<code>date</code> 决定列表排序，同年条目上方压一层淡描边年份</li><li><code>duration</code> 是手填的阅读时长，<code>repositories</code> 是文章对应的仓库（可写一个 URL 或 URL 数组），两者都渲染在标题下的日期行，列表页不显示</li><li><code>draft: true</code> 不进列表；<code>lang: zh</code> 在标题前加「中文」标记</li><li>下划线开头的文件只能通过路由直接打开，不出现在列表、没有任何链接指向它</li><li>正文里 <code>[[toc]]</code> 展开成左侧浮动目录，标题自动带锚点；可以直接写组件标签与内嵌 HTML</li><li><code>:::warning</code> 是提示块；<code>$…$</code> 与 <code>$$…$$</code> 渲染成公式；<code>```mermaid</code> 代码块画成图</li></ul><h2 id="渲染基线" tabindex="-1">渲染基线 <a class="header-anchor" href="#渲染基线" aria-hidden="true">#</a></h2><p>这一段往下是基线样例，用来比对排版：标题层级、列表、引用、代码块、表格、中英混排。</p><h3 id="三级标题" tabindex="-1">三级标题 <a class="header-anchor" href="#三级标题" aria-hidden="true">#</a></h3><p>正文段落，含 <code>行内代码</code>、<strong>加粗</strong>、<em>斜体</em>，以及一个<a href="https://github.com/Etavioxy" target="_blank" rel="noopener">外链</a>。</p><ul><li>无序列表第一项</li><li>无序列表第二项，比较长的一行，看看换行后的行高和缩进是否正常，中文与 English 混排时字距会不会松。</li></ul><ol><li>有序列表第一项</li><li>有序列表第二项</li></ol><blockquote><p>引用块：看看左侧的边线与灰度。</p></blockquote><pre class="shiki shiki-themes vitesse-dark vitesse-light" style="--s-dark:#dbd7caee;--s-light:#393a34;--s-dark-bg:#121212;--s-light-bg:#ffffff;" tabindex="0"><code class="language-ts"><span class="line"><span style="--s-dark:#758575DD;--s-light:#A0ADA0;">// 代码块：检查等宽字体、背景、横向滚动</span></span>
+<span class="line"><span style="--s-dark:#4D9375;--s-light:#1E754F;">export</span><span style="--s-dark:#CB7676;--s-light:#AB5959;"> function</span><span style="--s-dark:#80A665;--s-light:#59873A;"> noop</span><span style="--s-dark:#666666;--s-light:#999999;">():</span><span style="--s-dark:#5DA994;--s-light:#2E8F82;"> void</span><span style="--s-dark:#666666;--s-light:#999999;"> {</span></span>
+<span class="line"><span style="--s-dark:#758575DD;--s-light:#A0ADA0;">  // nothing</span></span>
+<span class="line"><span style="--s-dark:#666666;--s-light:#999999;">}</span></span></code></pre><table><thead><tr><th>层级</th><th>含义</th></tr></thead><tbody><tr><td>S</td><td>从 0 独立交付</td></tr><tr><td>A</td><td>生产环境用过</td></tr></tbody></table><hr><p>分隔线之后的收尾段落。</p></div><!--]--></article><div class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden"><span font-mono="" op50="">&gt; </span><a href="/posts" class="router-link-active font-mono op50 hover:op75"></a></div><!--]--><div class="mt-10 mb-6 prose m-auto flex slide-enter copyright"><span class="text-sm op50">© 2026 Etavioxy</span><div class="flex-auto"></div></div></main><!--]--></div>
+  
+
+</body></html>
